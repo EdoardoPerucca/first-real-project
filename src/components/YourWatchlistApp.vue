@@ -4,7 +4,7 @@ import { store } from "../store.js";
 
 export default {
 
-    name: "PeliculaStudioApp",
+    name: "YourWatchlistApp",
 
     data() {
         return {
@@ -12,34 +12,34 @@ export default {
 
             cards: [
                 {
-                    image: 'image (14).svg',
-                    title: 'Array of equipment',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Gallery-01.jpg',
+                    title: 'Seventeenth summer',
+                    text: 'Commercial, Music Video',
                 },
                 {
-                    image: 'image (16).svg',
-                    title: 'New technologies',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Gallery-02.jpg',
+                    title: 'A message to space',
+                    text: 'Short film',
                 },
                 {
-                    image: 'image (18).svg',
-                    title: 'Versitile actors',
-                    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                    image: 'Gallery-03.jpg',
+                    title: 'The most beautiful thing',
+                    text: "Music Video",
                 },
                 {
-                    image: 'image (15).svg',
-                    title: 'Top directors',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Gallery-04.jpg',
+                    title: 'Permission to speak',
+                    text: 'Documentary',
                 },
                 {
-                    image: 'image (17).svg',
-                    title: "Minute editing",
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Gallery-05.jpg',
+                    title: "Explore our space",
+                    text: 'Film noir',
                 },
                 {
-                    image: 'image (19).svg',
-                    title: "Versitile actors",
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Gallery-06.jpg',
+                    title: "Film production",
+                    text: 'Blaxploitation',
                 }
             ],
         }
@@ -55,8 +55,8 @@ export default {
     <div id="container-1000px">
 
         <div id="Pelicula-Studio-Title">
-            <h4>Pelicula Studio</h4>
-            <h2>This is what we do</h2>
+            <h4>Your Watchlist</h4>
+            <h2>Best hits movies</h2>
         </div>
 
         <div id="Pelicula-Studio-Cards">
@@ -109,7 +109,7 @@ export default {
 
 
             img {
-                max-height: 50px;
+                max-width: 250px;
             }
 
             .Pelicula-single-card-text {

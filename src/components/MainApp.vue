@@ -4,6 +4,11 @@ import { store } from "../store.js";
 
 import CinemaStudioApp from "./CinemaStudioApp.vue";
 import PeliculaStudioApp from "./PeliculaStudioApp.vue";
+import AboutUsApp from "./AboutUsApp.vue";
+import YourWatchlistApp from "./YourWatchlistApp.vue";
+import CompanyNumbersApp from "./CompanyNumbersApp.vue";
+import MeetTheTeam from "./MeetTheTeam.vue";
+import Review from "./Review.vue";
 
 export default {
 
@@ -18,6 +23,11 @@ export default {
     components: {
         CinemaStudioApp,
         PeliculaStudioApp,
+        AboutUsApp,
+        YourWatchlistApp,
+        CompanyNumbersApp,
+        MeetTheTeam,
+        Review,
     },
 
 }
@@ -28,6 +38,16 @@ export default {
         <CinemaStudioApp></CinemaStudioApp>
 
         <PeliculaStudioApp></PeliculaStudioApp>
+
+        <AboutUsApp></AboutUsApp>
+
+        <YourWatchlistApp></YourWatchlistApp>
+
+        <CompanyNumbersApp></CompanyNumbersApp>
+
+        <MeetTheTeam></MeetTheTeam>
+
+        <Review></Review>
 
     </div>
 </template>

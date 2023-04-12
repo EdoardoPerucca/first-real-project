@@ -4,7 +4,7 @@ import { store } from "../store.js";
 
 export default {
 
-    name: "PeliculaStudioApp",
+    name: "MeetTheTeam",
 
     data() {
         return {
@@ -12,35 +12,25 @@ export default {
 
             cards: [
                 {
-                    image: 'image (14).svg',
-                    title: 'Array of equipment',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Team-01.jpg',
+                    title: 'Fabricio Guerra',
+                    text: 'Main Director',
                 },
                 {
-                    image: 'image (16).svg',
-                    title: 'New technologies',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Team-02.jpg',
+                    title: 'Umberto Pagoda',
+                    text: 'Main Writer',
                 },
                 {
-                    image: 'image (18).svg',
-                    title: 'Versitile actors',
-                    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                    image: 'Team-03.jpg',
+                    title: 'Gloria Riccasso',
+                    text: "Main Producer",
                 },
                 {
-                    image: 'image (15).svg',
-                    title: 'Top directors',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                    image: 'Team-04.jpg',
+                    title: 'Lio Napoin',
+                    text: 'Cameramen',
                 },
-                {
-                    image: 'image (17).svg',
-                    title: "Minute editing",
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                },
-                {
-                    image: 'image (19).svg',
-                    title: "Versitile actors",
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                }
             ],
         }
     },
@@ -55,8 +45,8 @@ export default {
     <div id="container-1000px">
 
         <div id="Pelicula-Studio-Title">
-            <h4>Pelicula Studio</h4>
-            <h2>This is what we do</h2>
+            <h4>The Pericuros</h4>
+            <h2>Meet the team</h2>
         </div>
 
         <div id="Pelicula-Studio-Cards">
@@ -98,28 +88,32 @@ export default {
         flex-flow: row wrap;
         justify-content: space-between;
         width: 100%;
-        gap: 20px;
+        gap: 10px;
 
         .Pelicula-single-Card {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 1em;
-            width: calc(100% / 3 - (20px * 2));
+            width: calc(100% / 4 - (10px * 3));
 
 
             img {
-                max-height: 50px;
+                max-height: 250px;
             }
 
             .Pelicula-single-card-text {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                gap: 1em;
 
                 h5 {
                     text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 12px;
                 }
             }
 
