@@ -9,6 +9,9 @@ import YourWatchlistApp from "./YourWatchlistApp.vue";
 import CompanyNumbersApp from "./CompanyNumbersApp.vue";
 import MeetTheTeam from "./MeetTheTeam.vue";
 import Review from "./Review.vue";
+import LatestNews from "./LatestNews.vue";
+import BrandIdentity from "./BrandIdentity.vue";
+import FormApp from "./FormApp.vue";
 
 export default {
 
@@ -28,6 +31,9 @@ export default {
         CompanyNumbersApp,
         MeetTheTeam,
         Review,
+        LatestNews,
+        BrandIdentity,
+        FormApp,
     },
 
 }
@@ -49,22 +55,13 @@ export default {
 
         <Review></Review>
 
+        <LatestNews></LatestNews>
+
+        <BrandIdentity></BrandIdentity>
+
+        <FormApp></FormApp>
+
     </div>
 </template>
 
-<style scoped lang="scss">
-/*
-#cinema-studio {
-    width: 100%;
-    height: 425px;
-    background-image: url(../../public/blog02.jpg);
-
-    .cinema-studio-inner-text {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        color: white;
-    }
-}
-*/
-</style>
+<style scoped lang="scss"></style>
