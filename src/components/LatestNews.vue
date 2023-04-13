@@ -73,6 +73,7 @@ export default {
     width: 100%;
     margin: auto;
     padding-bottom: 4em;
+    padding-top: 2em;
 
     #Pelicula-Studio-Title {
         display: flex;
@@ -81,6 +82,10 @@ export default {
         padding-top: 3em;
         padding-bottom: 2em;
         text-transform: uppercase;
+
+        h4 {
+            font-size: 10px;
+        }
     }
 
     #Pelicula-Studio-Cards {
@@ -101,20 +106,29 @@ export default {
 
             img {
                 max-width: 300px;
+
+            }
+
+            img:hover {
+                opacity: .5;
+                cursor: pointer;
             }
 
             .Pelicula-single-card-text {
                 display: flex;
                 flex-direction: column;
-                text-align: center;
+                text-align: start;
 
                 h5 {
                     text-transform: uppercase;
                     font-weight: bold;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
                 }
 
                 p {
                     font-size: 12px;
+                    color: #8f8f92;
                 }
             }
 

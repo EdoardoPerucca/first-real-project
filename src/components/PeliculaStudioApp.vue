@@ -91,6 +91,14 @@ export default {
         padding-top: 3em;
         padding-bottom: 2em;
         text-transform: uppercase;
+
+        h4 {
+            font-size: .7em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
     }
 
     #Pelicula-Studio-Cards {
@@ -98,14 +106,14 @@ export default {
         flex-flow: row wrap;
         justify-content: space-between;
         width: 100%;
-        gap: 20px;
+        gap: 50px;
 
         .Pelicula-single-Card {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 1em;
-            width: calc(100% / 3 - (20px * 2));
+            width: calc(100% / 3 - (50px * 2));
 
 
             img {
@@ -116,10 +124,16 @@ export default {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                gap: 1em;
+                gap: .5em;
 
                 h5 {
                     text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                p {
+                    color: #8f8f92;
+                    font-size: 13px;
                 }
             }
 

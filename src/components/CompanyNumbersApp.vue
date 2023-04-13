@@ -20,7 +20,7 @@ export default {
                     text: 'Our projects',
                 },
                 {
-                    number: 1906,
+                    number: 1.906,
                     text: 'Cup of coffee',
                 },
                 {
@@ -83,12 +83,12 @@ export default {
 
                 .Single-Card-Number {
                     font-weight: bold;
-                    font-size: 3em;
+                    font-size: 2em;
                 }
 
                 .Single-Card-Text {
                     text-transform: uppercase;
-                    font-size: 12px;
+                    font-size: 10px;
                     font-weight: bold;
                 }
             }

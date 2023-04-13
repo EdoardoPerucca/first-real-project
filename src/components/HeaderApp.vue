@@ -37,11 +37,9 @@ export default {
                     <div class="dropdown">
                         <i class="fa-solid fa-chevron-down"></i>
                         <div class="dropdown-content">
-                            <a href="#">Page 1</a>
-                            <a href="#">Page 2</a>
-                            <a href="#">Page 3</a>
-                            <a href="#">Page 4</a>
-                            <a href="#">Page 5</a>
+                            <a href="#">Services</a>
+                            <a href="#">Our work flow</a>
+                            <a href="#">Video thumbnail type</a>
                         </div>
                     </div>
 
@@ -122,13 +120,14 @@ export default {
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
+            background-color: black;
+            min-width: 180px;
             z-index: 1;
+            left: -50px;
         }
 
         .dropdown-content a {
-            color: black;
+            color: white;
             padding: 10px 15px;
             text-decoration: none;
             display: block;

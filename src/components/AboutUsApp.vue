@@ -23,7 +23,7 @@ export default {
 
         <div id="container-1000px">
             <div id="cinema-studio-inner">
-                <div>
+                <div id="about-us">
                     About us
                 </div>
                 <div id="cinema-studio-title">
@@ -31,7 +31,7 @@ export default {
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam deleniti quam reprehenderit ea
                     tenetur dolores necessitatibus ipsum quia tempora, aperiam nostrum accusamus qui, ut quibusdam in
-                    tempore odit mollitia?</p>
+                    tempore odit mollitia</p>
                 <button class="button-white">Read More</button>
             </div>
         </div>
@@ -57,12 +57,22 @@ export default {
         font-weight: bold;
 
         #cinema-studio-inner {
-            max-width: 400px;
+            max-width: 50%;
+
+            #about-us {
+                font-size: 10px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+                padding-top: .5em;
+            }
 
             p {
                 font-size: .7em;
                 padding-top: 2em;
                 padding-bottom: 2em;
+                color: #f2f2f2;
             }
 
             .button-white {
@@ -70,6 +80,7 @@ export default {
                 text-transform: uppercase;
                 margin-top: 1em;
                 border: none;
+                cursor: pointer;
             }
         }
 

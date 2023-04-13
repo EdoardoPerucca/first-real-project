@@ -36,6 +36,12 @@ export default {
                         <div class="review-subject-position">Designer</div>
                     </div>
                 </div>
+
+                <div id="points">
+                    <div class="point-inner"></div>
+                    <div class="point-inner"></div>
+                    <div class="point-inner"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -66,9 +72,14 @@ export default {
             height: 100%;
             position: relative;
 
+            p {
+                color: #f2f2f2;
+
+            }
+
             .fa-quote-left {
                 position: absolute;
-                top: 15%;
+                top: 10%;
                 left: 50%;
                 font-size: 3em;
                 translate: -50%;
@@ -94,6 +105,20 @@ export default {
                         font-size: 12px;
                         align-items: flex-start;
                     }
+                }
+            }
+
+            #points {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                padding-top: .5em;
+
+                .point-inner {
+                    width: 10px;
+                    height: 10px;
+                    background-color: white;
+                    border-radius: 50%;
                 }
             }
         }

@@ -70,11 +70,19 @@ export default {
     #square-left {
         width: 50%;
 
+        h5 {
+            font-size: 10px;
+        }
+
         h2 {
             text-transform: uppercase;
             margin-top: 1em;
             margin-bottom: 1em;
             font-weight: bold;
+        }
+
+        p {
+            color: #8f8f92;
         }
     }
 

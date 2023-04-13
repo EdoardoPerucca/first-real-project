@@ -51,7 +51,7 @@ export default {
 
         <div id="Pelicula-Studio-Cards">
             <div class="Pelicula-single-Card" v-for="card in cards">
-                <img v-bind:src="card.image" alt="">
+                <img v-bind:src="card.image" alt="Photo">
                 <div class="Pelicula-single-card-text">
                     <h5>{{ card.title }}</h5>
                     <p>{{ card.text }}</p>
@@ -78,9 +78,13 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 3em;
+        padding-top: 4em;
         padding-bottom: 2em;
         text-transform: uppercase;
+
+        h4 {
+            font-size: 10px;
+        }
     }
 
     #Pelicula-Studio-Cards {
@@ -100,6 +104,11 @@ export default {
 
             img {
                 max-height: 250px;
+            }
+
+            img:hover {
+                opacity: .5;
+                cursor: pointer;
             }
 
             .Pelicula-single-card-text {

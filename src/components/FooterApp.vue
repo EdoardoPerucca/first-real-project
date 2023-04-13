@@ -59,7 +59,7 @@ export default {
                         <p>2/45 Tower Street, NewYork USA</p>
                     </div>
                     <div class="contact-info">
-                        <i class="fa-sharp fa-regular fa-phone"></i>
+                        <i class="fa-solid fa-phone"></i>
                         <p>Call Us On 08008401010</p>
                     </div>
                     <div class="contact-info">
@@ -74,7 +74,7 @@ export default {
                         <h4>{{ card.title }}</h4>
                     </strong>
                     <ul>
-                        <li v-for="link in card.links">{{ link }}</li>
+                        <li v-for="link in card.links"><a href="#">{{ link }}</a></li>
                     </ul>
 
                 </div>
@@ -84,8 +84,13 @@ export default {
                     <div id="newsletter">
                         <h4>Newsletter</h4>
                         <p>Subscribe to receive inspiration, <br> Ideas & News in your inbox</p>
-                        <input type="text" placeholder="Enter Your Email">
-                        <button>Subscribe</button>
+
+                        <form action="" method="get">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <div id="button">
+                                <input id="button-inner" type="submit" value="Submit now">
+                            </div>
+                        </form>
                     </div>
 
                 </div>
@@ -106,7 +111,7 @@ export default {
 
 <style scoped lang="scss">
 #footer-background {
-    background-color: black;
+    background-color: #111111;
     color: white;
 
     #container-1000px {
@@ -130,19 +135,24 @@ export default {
                     padding-bottom: 1em;
                 }
 
+                a {
+                    color: #f2f2f2;
+                }
+
                 .contact-info {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    gap: 12px;
+                    line-height: 2em;
                     font-size: 13px;
                     text-transform: capitalize;
-                    color: #c2c3c7;
+                    color: #f2f2f2f2;
                 }
 
                 li {
                     line-height: 2em;
                     font-size: 13px;
-                    color: #c2c3c7;
+                    color: #f2f2f2f2;
                 }
 
                 #newsletter {
@@ -150,7 +160,7 @@ export default {
                     line-height: 1.5em;
 
                     p {
-                        color: #c2c3c7;
+                        color: #f2f2f2f2;
                     }
 
                     input {
@@ -159,13 +169,20 @@ export default {
                         padding: .8em;
                         background-color: #1c1c1c;
                         border: none;
+                        color: white;
                     }
 
-                    button {
-                        padding: 1em 2.5em;
+                    #button-inner {
+                        padding: 1em 2em;
                         text-transform: uppercase;
                         font-weight: bold;
                         border: none;
+                        background-color: #f2f2f2;
+                        color: black;
+                    }
+
+                    #button-inner:hover {
+                        cursor: pointer;
                     }
                 }
 
@@ -175,7 +192,7 @@ export default {
         hr {
             margin-top: 5em;
             margin-bottom: 1.5em;
-            color: #c2c3c7;
+            color: #f2f2f2f2;
         }
 
         #copyright {
@@ -183,7 +200,7 @@ export default {
             padding-bottom: 1em;
             font-size: 13px;
             text-transform: capitalize;
-            color: #c2c3c7;
+            color: #f2f2f2f2;
             font-weight: bold;
         }
     }

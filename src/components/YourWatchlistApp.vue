@@ -91,6 +91,10 @@ export default {
         padding-top: 3em;
         padding-bottom: 2em;
         text-transform: uppercase;
+
+        h4 {
+            font-size: 10px;
+        }
     }
 
     #Pelicula-Studio-Cards {
@@ -107,19 +111,31 @@ export default {
             gap: 1em;
             width: calc(100% / 3 - (20px * 2));
 
-
             img {
                 max-width: 250px;
+            }
+
+            img:hover {
+                opacity: .5;
+                cursor: pointer;
+
             }
 
             .Pelicula-single-card-text {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                gap: 1em;
+                gap: .5em;
 
                 h5 {
                     text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                p {
+                    color: #8f8f92;
+                    font-weight: bold;
+                    font-size: 12px;
                 }
             }
 
